@@ -2,6 +2,10 @@
     "waitFor" : "onCreateCommand",
     "updateContentCommand": "",
     "postCreateCommand": ".devcontainer/setup.sh",
+    "postStartCommand": ".devcontainer/autostart.sh",
+    "containerEnv": {
+      "DISPLAY": ":1"
+    },
     "customizations": {
         "codespaces": {
           "openFiles": []
