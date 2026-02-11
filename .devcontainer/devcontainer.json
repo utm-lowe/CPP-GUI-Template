@@ -3,12 +3,10 @@
     "updateContentCommand": "",
     "postCreateCommand": ".devcontainer/setup.sh",
     "postStartCommand": ".devcontainer/autostart.sh",
-    "forwardPorts": [
-        {
-            "port": 6080,
-            "name": "desktop"
-        }
-    ],
+    "forwardPorts": [6080],
+    "portsAttributes": { "6080" :{
+      "label": "desktop"
+    }},
     "containerEnv": {
       "DISPLAY": ":1"
     },
